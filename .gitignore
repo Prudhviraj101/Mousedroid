@@ -13,3 +13,15 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Local AI tooling
+.claude/
+.kotlin/
+.idea/
+
+# Python runtime
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
