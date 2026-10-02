@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Mousedroid</string>
+    <string name="title_hero">Control Center,\nElevated</string>
+    <string name="subtitle_hero">Precision wireless trackpad, media controller, hotkeys &amp; productivity suite.</string>
+    <string name="choose_device">Connect to Host PC</string>
+    <string name="recent_connections">Recent Connections</string>
+    <string name="server_ip_hint">Host IP (e.g. 192.168.1.100)</string>
+    <string name="port_indicator">UDP Port: 9999 • Auto-Discovery: 9998</string>
+    <string name="connect">Connect</string>
+    <string name="scan_network">Scan Network</string>
+    <string name="scanning">Discovering…</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    
+    <!-- Mode Tabs -->
+    <string name="tab_trackpad">Trackpad</string>
+    <string name="tab_media">Media</string>
+    <string name="tab_hotkeys">Hotkeys</string>
+    <string name="tab_numpad">Numpad</string>
+    
+    <!-- Click buttons -->
+    <string name="left_click">Left Click</string>
+    <string name="right_click">Right Click</string>
+    <string name="middle_click">Middle</string>
+    
+    <!-- Keyboard & Text -->
+    <string name="type_text_hint">Type text to send to host…</string>
+    <string name="send">Send</string>
+    <string name="clear">Clear</string>
+    <string name="voice_typing">Voice Input</string>
+    <string name="paste_clipboard">Paste Clipboard</string>
+    
+    <!-- Settings -->
+    <string name="settings">Settings &amp; Preferences</string>
+    <string name="trackpad_sensitivity">Cursor Sensitivity</string>
+    <string name="scroll_speed">Scroll Speed &amp; Inertia</string>
+    <string name="haptic_feedback">Haptic Feedback</string>
+    <string name="invert_scroll">Invert Two-Finger Scroll</string>
+    <string name="tap_to_click">Tap to Click</string>
+    <string name="cursor_smoothing">Cursor Acceleration Smoothing</string>
+    
+    <!-- Setup & About -->
+    <string name="quick_guide_title">Zero-Configuration Setup</string>
+    <string name="quick_guide_desc">1. Run \'python mousedroid_server.py\' on your PC.\n2. Ensure your phone and PC are on the same Wi-Fi.\n3. Tap \'Scan Network\' or enter the IP directly.</string>
+</resources>
