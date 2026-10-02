@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Deep Obsidian & OLED Foundations -->
+    <color name="bg_dark">#0A0D0A</color>
+    <color name="bg_dark_secondary">#111611</color>
+    <color name="bg_dark_elevated">#182017</color>
+    <color name="bg_dark_card">#131B12</color>
+
+    <!-- Frosted Glass Surfaces & Elevation -->
+    <color name="glass_surface">#1F2B1D</color>
+    <color name="glass_surface_subtle">#151F14</color>
+    <color name="glass_surface_light">#2A3A27</color>
+    <color name="glass_surface_active">#354A32</color>
+    <color name="glass_surface_hover">#253422</color>
+    <color name="glass_stroke">#33452F</color>
+    <color name="glass_stroke_light">#4B6344</color>
+    <color name="glass_stroke_glow">#6EE7B7</color>
+
+    <!-- Pill Button & Chip States -->
+    <color name="pill_active_bg">#E8F5E9</color>
+    <color name="pill_active_text">#0A140B</color>
+    <color name="pill_inactive_bg">#1A2518</color>
+    <color name="pill_inactive_text">#9FB399</color>
+    <color name="pill_pressed_bg">#C8E6C9</color>
+
+    <!-- Cyberpunk & Neon Highlights -->
+    <color name="accent_emerald">#10B981</color>
+    <color name="accent_lime">#6EE7B7</color>
+    <color name="accent_lime_glow">#406EE7B7</color>
+    <color name="accent_amber">#FBBF24</color>
+    <color name="accent_amber_glow">#40FBBF24</color>
+    <color name="accent_coral">#F43F5E</color>
+    <color name="accent_coral_glow">#40F43F5E</color>
+    <color name="accent_blue">#38BDF8</color>
+    <color name="accent_blue_glow">#4038BDF8</color>
+    <color name="accent_violet">#A855F7</color>
+    <color name="accent_violet_glow">#40A855F7</color>
+
+    <!-- Trackpad Touch Glow Indicators -->
+    <color name="touch_cursor_ring">#6EE7B7</color>
+    <color name="touch_scroll_ring">#FBBF24</color>
+    <color name="touch_gesture_ring">#A855F7</color>
+
+    <!-- Typography Tokens -->
+    <color name="text_primary">#F8FAF6</color>
+    <color name="text_secondary">#A7B7A2</color>
+    <color name="text_tertiary">#667A60</color>
+    <color name="text_muted">#4A5A46</color>
+
+    <!-- Standard Colors -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="ripple_light">#33FFFFFF</color>
+    <color name="ripple_lime">#336EE7B7</color>
+</resources>

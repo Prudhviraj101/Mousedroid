@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_glass_card"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Header & Handle -->
+    <View
+        android:layout_width="36dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_badge_live" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_keyboard"
+            android:contentDescription="Keyboard"
+            app:tint="@color/accent_lime" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Remote Keyboard &amp; Typing"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btnCloseKeyboard"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_close"
+            android:contentDescription="Close"
+            app:tint="@color/text_secondary" />
+    </LinearLayout>
+
+    <!-- Text Input Box with Voice & Clipboard triggers -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/bg_input_field"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="4dp">
+
+        <EditText
+            android:id="@+id/etSendText"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/type_text_hint"
+            android:imeOptions="actionSend"
+            android:inputType="text"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_tertiary"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/btnSheetVoice"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_mic"
+            android:contentDescription="Voice Input"
+            app:tint="@color/accent_lime" />
+
+        <ImageButton
+            android:id="@+id/btnSheetPaste"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_paste"
+            android:contentDescription="Paste"
+            app:tint="@color/accent_amber" />
+
+        <Button
+            android:id="@+id/btnSendText"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/bg_pill_button_primary"
+            android:paddingHorizontal="14dp"
+            android:text="@string/send"
+            android:textColor="@color/pill_active_text"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Function Keys (F1 - F12) Horizontal Carousel -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnF1"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/bg_pill_button_secondary"
+                android:text="F1"
+                android:textColor="@color/text_primary"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/btnF2"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/bg_pill_button_secondary"
+                android:text="F2"
+                android:textColor="@color/text_primary"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/btnF3"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/bg_pill_button_secondary"
+                android:text="F3"
+                android:textColor="@color/text_primary"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/btnF4"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/bg_pill_button_secondary"
+                android:text="F4"
+                android:textColor="@color/text_primary"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/btnF5"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/bg_pill_button_secondary"
+                android:text="F5"
+                android:textColor="@color/accent_lime"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnF6"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/bg_pill_button_secondary"
+                android:text="F6"
+                android:textColor="@color/text_primary"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/btnF7"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/bg_pill_button_secondary"
+                android:text="F7"
+                android:textColor="@color/text_primary"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/btnF8"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/bg_pill_button_secondary"
+                android:text="F8"
+                android:textColor="@color/text_primary"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/btnF9"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/bg_pill_button_secondary"
+                android:text="F9"
+                android:textColor="@color/text_primary"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/btnF10"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/bg_pill_button_secondary"
+                android:text="F10"
+                android:textColor="@color/text_primary"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/btnF11"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/bg_pill_button_secondary"
+                android:text="F11"
+                android:textColor="@color/accent_amber"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnF12"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_pill_button_secondary"
+                android:text="F12"
+                android:textColor="@color/text_primary"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Navigation Key Matrix (Esc, Tab, Backspace, Enter, Del) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnKeyEsc"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="3dp"
+            android:background="@drawable/bg_pill_button_secondary"
+            android:text="Esc"
+            android:textColor="@color/text_primary"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnKeyTab"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="2dp"
+            android:background="@drawable/bg_pill_button_secondary"
+            android:text="Tab"
+            android:textColor="@color/text_primary"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnKeyBackspace"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="2dp"
+            android:background="@drawable/bg_pill_button_secondary"
+            android:text="⌫"
+            android:textColor="@color/accent_coral"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnKeyDel"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="2dp"
+            android:background="@drawable/bg_pill_button_secondary"
+            android:text="Del"
+            android:textColor="@color/text_primary"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnKeyEnter"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1.2"
+            android:layout_marginStart="3dp"
+            android:background="@drawable/bg_pill_button_secondary"
+            android:text="Enter ↵"
+            android:textColor="@color/accent_lime"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Arrow Keys Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnArrowLeft"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="3dp"
+            android:background="@drawable/bg_pill_button_secondary"
+            android:text="←"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnArrowUp"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="2dp"
+            android:background="@drawable/bg_pill_button_secondary"
+            android:text="↑"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnArrowDown"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="2dp"
+            android:background="@drawable/bg_pill_button_secondary"
+            android:text="↓"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnArrowRight"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:layout_marginStart="3dp"
+            android:background="@drawable/bg_pill_button_secondary"
+            android:text="→"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>
